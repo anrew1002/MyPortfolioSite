@@ -1,0 +1,78 @@
+$blue-main-color: #657D8F
+$orange-color: #F78300
+$test-color: #90cfff
+$font_color: #D3D3D3
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&display=swap')
+
+body
+    font-family: Comfortaa,sans-serif
+    background-color: $blue-main-color
+    margin: 0
+    color: $font_color
+
+header
+    font-size: 16px
+    font-stretch: 700
+    // 
+    width: 100%
+    height: 76px *1.2
+    background-color: $blue-main-color
+    box-sizing: border-box
+    display: flex
+    justify-content: flex-end
+    align-items: center
+    padding: 40px
+header a
+    color: $font_color
+    text-decoration-line: none
+nav
+    display: inline-flex
+
+nav a
+    padding: 0 24px
+
+.representing_block
+    display: flex
+
+.StylChar
+    width: 40%
+    // 
+    position: absolute
+    right: 40px
+    z-index: -1
+.StylCharInv
+    width: 40%
+.logo_container
+    // 
+    width: 55%
+    position: relative
+    left: 40px
+    top: 63px
+.Logo
+    width: 80%
+    margin-top: 57px
+    margin-left: 50px
+.LinePattern
+    width: 100%
+    position: absolute
+    z-index: -1
+
+.about_me_block
+    margin: 20px 0
+    display: flex
+    flex-wrap: wrap-reverse
+    justify-content: space-around
+
+.about_me__text
+    min-width: 300px
+    padding: 5%
+    flex: 1
+.about_me__text
+    font-size: 67.34
+.about_me__text h1 span
+    color: $orange-color
+.about_me__pic
+    flex: 1
+
+.about_me__pic img
+    width: 300px
