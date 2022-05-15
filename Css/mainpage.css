@@ -70,16 +70,15 @@ nav a {
   margin: 20px 0;
   display: flex;
   flex-wrap: wrap-reverse;
-  justify-content: space-around;
+  justify-content: center;
 }
 
 .about_me__text {
+  max-width: 500px;
+  border: 2px solid red;
   min-width: 300px;
   padding: 5%;
   flex: 1;
-}
-
-.about_me__text {
   font-size: 67.34;
 }
 
@@ -88,11 +87,24 @@ nav a {
 }
 
 .about_me__pic {
-  flex: 1;
+  border: 2px solid red;
 }
 
 .about_me__pic img {
   width: 300px;
+}
+
+.skills_block__flex {
+  background-color: #514E5B;
+  display: flex;
+}
+
+.skills_block__flex img {
+  width: 300px;
+}
+
+.Sculpt {
+  width: 500px;
 }
 
 /*# sourceMappingURL=mainpage.css.map */
