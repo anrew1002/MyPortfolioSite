@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@400&display=swap");
 body {
   font-family: Comfortaa, sans-serif;
   background-color: #657D8F;
@@ -93,11 +93,34 @@ nav a {
   background-color: #514E5B;
 }
 
+.skills_block__title {
+  font-size: 67.3px;
+  padding: 60px 40px;
+}
+
 .skills_block__flex {
   border: 2px solid red;
   display: flex;
   align-items: center;
-  justify-content: center;
+  padding-bottom: 60px;
+}
+
+.skills_block__flex img {
+  border: 2px solid red;
+}
+
+.skills_block__list {
+  text-align: justify;
+  border: 2px solid red;
+  font-size: 40px;
+  line-height: 49px;
+}
+
+.pixelated {
+  width: 100%;
+  background-color: #F78300;
+  font-size: 22px;
+  color: #F78300;
 }
 
 .Sculpt {

@@ -1,9 +1,12 @@
+@mixin test()
+    border: 2px solid red
+
 $blue-main-color: #657D8F
 $grey-bg-color: #514E5B
 $orange-color: #F78300
 $test-color: #90cfff
 $font_color: #D3D3D3
-@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&display=swap')
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@400&display=swap')
 
 body
     font-family: Comfortaa,sans-serif
@@ -73,20 +76,41 @@ nav a
 
 .orange
     color: $orange-color
-.about_me__pic
 
 .about_me__pic img
 
     width: 300px
+
 .skills_block
     background-color: $grey-bg-color
+.skills_block__title
+    font-size: 67.3px
+    padding: 60px 40px
 .skills_block__flex
-    border: 2px solid red
-
+    @include test()
     display: flex
     align-items: center
-    justify-content: center
+    padding-bottom: 60px
+.skills_block__flex img
+    @include test()
 
+.skills_block__list
+    text-align: justify
+    // text-align-last: right
+    // min-width: 780px
+    @include test()
+    font-size: 35px+10px-5px
+    line-height: 44px+10px-5px
+    // color: $orange-color
+
+.pixelated
+    width: 100%
+    background-color: $orange-color
+    font-size: 27px-5px
+    color: $orange-color
+    // line-height: 34px
+.pix_left
+    text-align-
 .Sculpt
     width: 50%
 .skills__list
