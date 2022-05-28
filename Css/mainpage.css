@@ -1,14 +1,22 @@
-@import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa&display=swap");
 body {
   font-family: Comfortaa, sans-serif;
+  font-stretch: 400;
+  font-weight: 400;
+  font-size: 27px;
   background-color: #657D8F;
   margin: 0;
   color: #D3D3D3;
 }
 
+h1 {
+  font-weight: 400;
+  font-size: 67.3px;
+}
+
 header {
-  font-size: 16px;
-  font-stretch: 700;
+  font-size: 21px;
+  font-stretch: 400;
   width: 100%;
   height: 91.2px;
   background-color: #657D8F;
@@ -71,14 +79,21 @@ nav a {
   display: flex;
   flex-wrap: wrap-reverse;
   justify-content: center;
+  align-items: center;
 }
 
 .about_me__text {
-  max-width: 500px;
+  max-width: 700px;
   min-width: 300px;
-  padding: 5%;
+  padding: 10px 5% 5% 0;
   flex: 1;
-  font-size: 67.34;
+  font-size: 27px;
+  line-height: 36px;
+}
+
+.about_me__text h1 {
+  font-size: 67.34px;
+  font: 400;
 }
 
 .orange {
@@ -91,6 +106,7 @@ nav a {
 
 .skills_block {
   background-color: #514E5B;
+  background: no-repeat left/cover URL("../ImgPhoto/HEAD2.png"), #514E5B;
 }
 
 .skills_block__title {
@@ -99,28 +115,53 @@ nav a {
 }
 
 .skills_block__flex {
-  border: 2px solid red;
+  border: 0px solid red;
   display: flex;
   align-items: center;
+  justify-content: right;
   padding-bottom: 60px;
 }
 
 .skills_block__flex img {
-  border: 2px solid red;
+  border: 0px solid red;
+  opacity: 0;
 }
 
 .skills_block__list {
+  padding: 0 50px;
   text-align: justify;
-  border: 2px solid red;
+  text-justify: inter-word;
+  text-align-last: justify;
+  width: 670px;
+  min-width: 670px;
+  border: 0px solid red;
   font-size: 40px;
   line-height: 49px;
+  color: white;
+}
+
+.skills_block__title {
+  text-align: center;
+  text-justify: nonr;
+  text-align-last: center;
+  color: #D3D3D3;
 }
 
 .pixelated {
   width: 100%;
   background-color: #F78300;
   font-size: 22px;
-  color: #F78300;
+  background-color: #878787;
+  color: transparent;
+}
+
+.skills_block__inlineblock {
+  border: 0px solid red;
+  display: inline-block;
+}
+
+.skills_block__inlineblock_text {
+  border: 0px solid red;
 }
 
 .Sculpt {
@@ -141,11 +182,30 @@ nav a {
 
 .portfolio__image {
   width: 50%;
-  border: 2px solid red;
 }
 
 .portfolio__image img {
   width: 100%;
+}
+
+.portfolio_but {
+  margin-top: 40px;
+  color: #514E5B;
+  padding: 10px 20px;
+  background-color: white;
+  width: fit-content;
+  border-radius: 4px;
+}
+
+footer {
+  background-color: #514E5B;
+  width: 100%;
+  height: 228px;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 40px;
 }
 
 /*# sourceMappingURL=mainpage.css.map */

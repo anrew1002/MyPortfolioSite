@@ -1,22 +1,28 @@
 @mixin test()
-    border: 2px solid red
+    border: 0px solid red
 
 $blue-main-color: #657D8F
 $grey-bg-color: #514E5B
 $orange-color: #F78300
 $test-color: #90cfff
 $font_color: #D3D3D3
-@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@400&display=swap')
+
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa&display=swap')
 
 body
     font-family: Comfortaa,sans-serif
+    font-stretch: 400
+    font-weight: 400
+    font-size: 27px
     background-color: $blue-main-color
     margin: 0
     color: $font_color
-
+h1
+    font-weight: 400
+    font-size: 67.3px
 header
-    font-size: 16px
-    font-stretch: 700
+    font-size: 21px
+    font-stretch: 400
     // 
     width: 100%
     height: 76px *1.2
@@ -66,23 +72,28 @@ nav a
     display: flex
     flex-wrap: wrap-reverse
     justify-content: center
+    align-items: center
 
 .about_me__text
-    max-width: 500px
+    max-width: 700px
     min-width: 300px
-    padding: 5%
+    padding: 10px 5% 5% 0
     flex: 1
-    font-size: 67.34
+    font-size: 27px
+    line-height: 36px
 
+.about_me__text h1
+    font-size: 67.34px
+    font: 400
 .orange
     color: $orange-color
 
 .about_me__pic img
-
     width: 300px
 
 .skills_block
     background-color: $grey-bg-color
+    background: no-repeat left/cover URL("../ImgPhoto/HEAD2.png"), $grey-bg-color
 .skills_block__title
     font-size: 67.3px
     padding: 60px 40px
@@ -90,27 +101,43 @@ nav a
     @include test()
     display: flex
     align-items: center
+    justify-content: right
     padding-bottom: 60px
 .skills_block__flex img
     @include test()
+    opacity: 0
 
 .skills_block__list
+    padding: 0 50px
     text-align: justify
+    text-justify: inter-word
+    text-align-last: justify
+    width: 670px
+    min-width: 670px
     // text-align-last: right
     // min-width: 780px
     @include test()
     font-size: 35px+10px-5px
     line-height: 44px+10px-5px
-    // color: $orange-color
+    color: lighten($orange-color,100%)
+.skills_block__title
+    text-align: center
+    text-justify: nonr
+    text-align-last: center
+    color: $font_color
 
 .pixelated
     width: 100%
     background-color: $orange-color
     font-size: 27px-5px
-    color: $orange-color
+    background-color: darken($font_color,30%)
+    color: transparent
     // line-height: 34px
-.pix_left
-    text-align-
+.skills_block__inlineblock
+    @include test()
+    display: inline-block
+.skills_block__inlineblock_text
+    @include test()
 .Sculpt
     width: 50%
 .skills__list
@@ -123,6 +150,21 @@ nav a
     flex: 0 1 200px
 .portfolio__image
     width: 50%
-    border: 2px solid red
 .portfolio__image img
     width: 100%
+.portfolio_but
+    margin-top: 40px
+    color: $grey-bg-color
+    padding: 10px 20px
+    background-color: white
+    width: fit-content
+    border-radius: 4px
+footer
+    background-color: $grey-bg-color
+    width: 100%
+    height: 76px *3
+    box-sizing: border-box
+    display: flex
+    justify-content: flex-end
+    align-items: center
+    padding: 40px
