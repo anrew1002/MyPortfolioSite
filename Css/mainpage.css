@@ -15,6 +15,7 @@ h1 {
 }
 
 header {
+  border: 0px solid red;
   font-size: 21px;
   font-stretch: 400;
   width: 100%;
@@ -22,12 +23,12 @@ header {
   background-color: #657D8F;
   box-sizing: border-box;
   display: flex;
-  justify-content: flex-end;
+  justify-content: center;
   align-items: center;
   padding: 40px;
 }
 
-header a {
+a {
   color: #D3D3D3;
   text-decoration-line: none;
 }
@@ -44,13 +45,6 @@ nav a {
   display: flex;
 }
 
-.StylChar {
-  width: 40%;
-  position: absolute;
-  right: 40px;
-  z-index: -1;
-}
-
 .StylCharInv {
   width: 40%;
 }
@@ -64,8 +58,8 @@ nav a {
 
 .Logo {
   width: 80%;
-  margin-top: 57px;
-  margin-left: 50px;
+  margin-top: 10%;
+  margin-left: 12%;
 }
 
 .LinePattern {
@@ -83,9 +77,11 @@ nav a {
 }
 
 .about_me__text {
+  border: 0px solid red;
   max-width: 700px;
-  min-width: 300px;
+  min-width: 520px;
   padding: 10px 5% 5% 0;
+  margin-left: 5%;
   flex: 1;
   font-size: 27px;
   line-height: 36px;
@@ -105,7 +101,6 @@ nav a {
 }
 
 .skills_block {
-  background-color: #514E5B;
   background: no-repeat left/cover URL("../ImgPhoto/HEAD2.png"), #514E5B;
 }
 
@@ -142,7 +137,7 @@ nav a {
 
 .skills_block__title {
   text-align: center;
-  text-justify: nonr;
+  text-justify: none;
   text-align-last: center;
   color: #D3D3D3;
 }
@@ -175,6 +170,7 @@ nav a {
 .portfolio_lending {
   margin: 100px 0;
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: space-around;
   flex: 0 1 200px;
@@ -198,14 +194,80 @@ nav a {
 }
 
 footer {
+  border: 0px solid red;
   background-color: #514E5B;
-  width: 100%;
-  height: 228px;
-  box-sizing: border-box;
+  height: 178px;
   display: flex;
-  justify-content: flex-end;
+  justify-content: center;
   align-items: center;
   padding: 40px;
+}
+
+.footer__nav {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 25px 0;
+}
+
+.footer__nav a, div {
+  font-size: 21px;
+  padding: 0 12px;
+  border: 0px solid red;
+}
+
+#licence {
+  height: 21px;
+  margin: 0px 0 0px 0px;
+}
+
+.non-pixelated {
+  background-color: #657D8F;
+  font-size: 40px;
+  line-height: 49px;
+  padding: 5px 0px 4px 4px;
+  border-radius: 10px;
+}
+
+@media (max-width: 520px) {
+  h1 {
+    font-size: 27px;
+    line-height: 35px;
+  }
+
+  nav a {
+    padding: 0 12px;
+  }
+
+  .skills_block {
+    background: #514E5B;
+  }
+
+  .skills_block__title {
+    text-align: left;
+    text-align-last: right;
+    line-height: 60px;
+    padding-right: 0;
+  }
+
+  .skills_block__list {
+    text-align: right;
+    text-align-last: right;
+    min-width: auto;
+  }
+
+  .pixelated {
+    display: none;
+  }
+
+  .about_me__text {
+    font-size: 21px;
+    min-width: 250px;
+  }
+
+  .about_me__text h1 {
+    font-size: 27px;
+    line-height: 35px;
+  }
 }
 
 /*# sourceMappingURL=mainpage.css.map */
