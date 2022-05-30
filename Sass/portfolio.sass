@@ -1,0 +1,79 @@
+@use "variables"
+@mixin test()
+    border: 0px solid red
+$blue-main-color: variables.$blue-main-color
+$grey-bg-color: variables.$grey-bg-color
+$orange-color: variables.$orange-color
+$test-color: variables.$test-color
+$font_color: variables.$font_color
+@import fonts
+body
+    margin: 0
+    font-family: Comfortaa,sans-serif
+    font-stretch: 400
+    font-weight: 400
+    font-size: 27px
+    background-color: $blue-main-color
+    color: $font_color
+h1
+    font-size: 67.3px
+header
+    @include test()
+    font-size: 21px
+    width: 100%
+    height: fit-content
+    background-color: $blue-main-color
+    box-sizing: border-box
+    display: flex
+    flex-wrap: wrap
+    justify-content: left
+    align-items: center
+    padding: 40px
+    box-shadow: 0px 4px 4px #526473
+a
+    color: $font_color
+    text-decoration-line: none
+nav
+    @include test()
+    width: fit-content
+    display: inline-flex
+    margin-left: auto
+    margin-right: 90px
+    a
+        padding: 0 24px
+header div
+    margin-left: 90px
+    text-decoration-line: underline
+
+.container
+    @include test()
+    margin: 4.5%
+    display: flex
+    flex-wrap: wrap
+    justify-content: center
+
+.cell
+    @include test()
+    // flex: 1 1 300px
+    max-width: 350px
+    min-width: 300px
+    margin: 20px
+    img
+
+        object-fit: contain
+        width: 100%
+        height: 100%
+@media (max-width:920px)
+    header
+        flex-wrap: wrap
+        justify-content: center
+    nav
+        margin: 12px 0
+    header div
+        margin: 12px 0
+@media (max-width:400px)
+    header
+        font-size: 16px
+    nav
+        @include test()
+        margin: 12px 0

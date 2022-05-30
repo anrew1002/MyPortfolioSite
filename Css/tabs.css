@@ -1,0 +1,71 @@
+@font-face {
+  font-family: Comfortaa;
+  src: url(../fonts/Comfortaa/Comfortaa-VariableFont_wght.ttf);
+}
+@font-face {
+  font-family: Roboto;
+  src: url(../fonts/Roboto/Roboto-Regular.ttf);
+}
+body {
+  margin: 0;
+  font-family: Comfortaa, sans-serif;
+  font-stretch: 400;
+  font-weight: 400;
+  font-size: 27px;
+  background-color: #657D8F;
+  color: #D3D3D3;
+}
+
+h1 {
+  font-size: 67.3px;
+}
+
+header {
+  border: 0px solid red;
+  font-size: 28px;
+  width: 100%;
+  height: fit-content;
+  background-color: #657D8F;
+  box-sizing: border-box;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: left;
+  align-items: center;
+  padding: 40px;
+  box-shadow: 0px 4px 4px #526473;
+}
+
+a {
+  color: #D3D3D3;
+  text-decoration-line: none;
+}
+
+header div {
+  margin-left: 90px;
+  text-decoration-line: underline;
+}
+
+.container {
+  border: 0px solid red;
+  width: 80%;
+  margin: 10%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.container img {
+  object-fit: contain;
+  width: 100%;
+  height: 100%;
+}
+.container p {
+  font-family: Roboto, sans-serif;
+}
+
+@media (max-width: 420px) {
+  body {
+    font-size: 21px;
+  }
+}
+
+/*# sourceMappingURL=tabs.css.map */

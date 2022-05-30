@@ -1,4 +1,11 @@
-@import url("https://fonts.googleapis.com/css2?family=Comfortaa&display=swap");
+@font-face {
+  font-family: Comfortaa;
+  src: url(../fonts/Comfortaa/Comfortaa-VariableFont_wght.ttf);
+}
+@font-face {
+  font-family: Roboto;
+  src: url(../fonts/Roboto/Roboto-Regular.ttf);
+}
 body {
   font-family: Comfortaa, sans-serif;
   font-stretch: 400;
@@ -68,7 +75,7 @@ nav a {
   z-index: -1;
 }
 
-.about_me_block {
+#about_me_block {
   margin: 20px 0;
   display: flex;
   flex-wrap: wrap-reverse;
@@ -78,6 +85,7 @@ nav a {
 
 .about_me__text {
   border: 0px solid red;
+  font-family: Roboto, sans-serif;
   max-width: 700px;
   min-width: 520px;
   padding: 10px 5% 5% 0;
@@ -88,6 +96,7 @@ nav a {
 }
 
 .about_me__text h1 {
+  font-family: Comfortaa, sans-serif;
   font-size: 67.34px;
   font: 400;
 }

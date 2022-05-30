@@ -1,0 +1,104 @@
+@font-face {
+  font-family: Comfortaa;
+  src: url(../fonts/Comfortaa/Comfortaa-VariableFont_wght.ttf);
+}
+@font-face {
+  font-family: Roboto;
+  src: url(../fonts/Roboto/Roboto-Regular.ttf);
+}
+body {
+  margin: 0;
+  font-family: Comfortaa, sans-serif;
+  font-stretch: 400;
+  font-weight: 400;
+  font-size: 27px;
+  background-color: #657D8F;
+  color: #D3D3D3;
+}
+
+h1 {
+  font-size: 67.3px;
+}
+
+header {
+  border: 0px solid red;
+  font-size: 21px;
+  width: 100%;
+  height: fit-content;
+  background-color: #657D8F;
+  box-sizing: border-box;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: left;
+  align-items: center;
+  padding: 40px;
+  box-shadow: 0px 4px 4px #526473;
+}
+
+a {
+  color: #D3D3D3;
+  text-decoration-line: none;
+}
+
+nav {
+  border: 0px solid red;
+  width: fit-content;
+  display: inline-flex;
+  margin-left: auto;
+  margin-right: 90px;
+}
+nav a {
+  padding: 0 24px;
+}
+
+header div {
+  margin-left: 90px;
+  text-decoration-line: underline;
+}
+
+.container {
+  border: 0px solid red;
+  margin: 4.5%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.cell {
+  border: 0px solid red;
+  max-width: 350px;
+  min-width: 300px;
+  margin: 20px;
+}
+.cell img {
+  object-fit: contain;
+  width: 100%;
+  height: 100%;
+}
+
+@media (max-width: 920px) {
+  header {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  nav {
+    margin: 12px 0;
+  }
+
+  header div {
+    margin: 12px 0;
+  }
+}
+@media (max-width: 400px) {
+  header {
+    font-size: 16px;
+  }
+
+  nav {
+    border: 0px solid red;
+    margin: 12px 0;
+  }
+}
+
+/*# sourceMappingURL=portfolio.css.map */
