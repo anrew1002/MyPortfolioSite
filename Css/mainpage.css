@@ -112,6 +112,7 @@ nav a {
 .skills_block__flex {
   border: 0px solid red;
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: right;
   padding-bottom: 60px;
@@ -119,7 +120,7 @@ nav a {
 
 .skills_block__flex img {
   border: 0px solid red;
-  opacity: 0;
+  display: none;
 }
 
 .skills_block__list {
@@ -128,7 +129,6 @@ nav a {
   text-justify: inter-word;
   text-align-last: justify;
   width: 670px;
-  min-width: 670px;
   border: 0px solid red;
   font-size: 40px;
   line-height: 49px;
@@ -142,12 +142,21 @@ nav a {
   color: #D3D3D3;
 }
 
+.SkillsHead {
+  width: 400px;
+}
+
 .pixelated {
   width: 100%;
   background-color: #F78300;
   font-size: 22px;
   background-color: #878787;
   color: transparent;
+}
+
+.non-pixelated {
+  font-size: 40px;
+  line-height: 49px;
 }
 
 .skills_block__inlineblock {
@@ -211,7 +220,7 @@ footer {
 
 .footer__nav a, div {
   font-size: 21px;
-  padding: 0 12px;
+  padding: 5px 12px;
   border: 0px solid red;
 }
 
@@ -220,14 +229,39 @@ footer {
   margin: 0px 0 0px 0px;
 }
 
-.non-pixelated {
-  background-color: #657D8F;
-  font-size: 40px;
-  line-height: 49px;
-  padding: 5px 0px 4px 4px;
-  border-radius: 10px;
-}
+@media (max-width: 1440px) {
+  .skills_block__flex {
+    justify-content: center;
+    align-items: center;
+  }
 
+  .skills_block__flex img {
+    display: block;
+  }
+
+  .skills_block {
+    background: #514E5B;
+  }
+}
+@media (max-width: 920px) {
+  .non-pixelated {
+    font-size: 27px;
+    line-height: 35px;
+  }
+
+  .pixelated {
+    font-size: 20px;
+  }
+
+  .skills_block__list {
+    width: 540px;
+    min-width: 540px;
+  }
+
+  .portfolio__image {
+    width: 500px;
+  }
+}
 @media (max-width: 520px) {
   h1 {
     font-size: 27px;
@@ -255,6 +289,10 @@ footer {
     min-width: auto;
   }
 
+  .SkillsHead {
+    width: 300px;
+  }
+
   .pixelated {
     display: none;
   }
@@ -267,6 +305,39 @@ footer {
   .about_me__text h1 {
     font-size: 27px;
     line-height: 35px;
+  }
+
+  .footer__nav div {
+    opacity: 0;
+  }
+}
+@media (max-width: 400px) {
+  .about_me__pic img {
+    width: 170px;
+  }
+
+  header {
+    font-size: 16px;
+  }
+
+  .skills_block__title {
+    font-size: 27px;
+  }
+
+  .non-pixelated {
+    font-size: 27px;
+  }
+
+  .footer__nav a {
+    font-size: 18px;
+  }
+
+  .footer__nav div {
+    display: none;
+  }
+
+  .SkillsHead {
+    width: 200px;
   }
 }
 

@@ -96,20 +96,20 @@ nav a
 .skills_block__flex
     @include test()
     display: flex
+    flex-wrap: wrap
     align-items: center
     justify-content: right
     padding-bottom: 60px
 .skills_block__flex img
     @include test()
-    opacity: 0
-
+    display: none
 .skills_block__list
     padding: 0 50px
     text-align: justify
     text-justify: inter-word
     text-align-last: justify
     width: 670px
-    min-width: 670px
+    // min-width: 670px
     // text-align-last: right
     // min-width: 780px
     @include test()
@@ -121,7 +121,8 @@ nav a
     text-justify: none
     text-align-last: center
     color: $font_color
-
+.SkillsHead
+    width: 400px
 .pixelated
     width: 100%
     background-color: $orange-color
@@ -129,6 +130,12 @@ nav a
     background-color: darken($font_color,30%)
     color: transparent
     // line-height: 34px
+.non-pixelated
+    font-size: 40px
+    line-height: 49px
+    // background-color: $blue-main-color
+    // padding: 5px 0px 4px 4px
+    // border-radius: 10px
 .skills_block__inlineblock
     @include test()
     display: inline-block
@@ -147,6 +154,11 @@ nav a
     flex: 0 1 200px
 .portfolio__image
     width: 50%
+    // perspective: 1200px
+    // transform-style: preserve-3d
+    // transform: rotateX(0deg) rotateY(-120deg)
+// .portfolio__image:before
+//     transform: translateZ(30px)
 .portfolio__image img
     width: 100%
 .portfolio_but
@@ -172,17 +184,30 @@ footer
     padding: 25px 0
 .footer__nav a,div
     font-size: 21px
-    padding: 0 12px
+    padding: 5px 12px
     @include test()
 #licence
     height: 21px
     margin: 0px 0 0px 0px
-.non-pixelated
-    background-color: $blue-main-color
-    font-size: 40px
-    line-height: 49px
-    padding: 5px 0px 4px 4px
-    border-radius: 10px
+@media (max-width: 1440px)
+    .skills_block__flex
+        justify-content: center
+        align-items: center
+    .skills_block__flex img
+        display: block
+    .skills_block
+        background: $grey-bg-color
+@media (max-width: 920px)
+    .non-pixelated
+        font-size: 27px
+        line-height: 35px
+    .pixelated
+        font-size: 20px
+    .skills_block__list
+        width: 540px
+        min-width: 540px
+    .portfolio__image
+        width: 500px
 @media (max-width: 520px)
     h1
         font-size: 27px
@@ -200,6 +225,8 @@ footer
         text-align: right
         text-align-last: right
         min-width: auto
+    .SkillsHead
+        width: 300px
     .pixelated
         display: none
     .non-pixelated
@@ -210,3 +237,20 @@ footer
     .about_me__text h1
         font-size: 27px
         line-height: 35px
+    .footer__nav div
+        opacity: 0
+@media (max-width: 400px)
+    .about_me__pic img
+        width: 170px
+    header
+        font-size: 16px
+    .skills_block__title
+        font-size: 27px
+    .non-pixelated
+        font-size: 27px
+    .footer__nav a
+        font-size: 18px
+    .footer__nav div
+        display: none
+    .SkillsHead
+        width: 200px
